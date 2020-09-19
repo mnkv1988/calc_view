@@ -1,0 +1,11 @@
+---
+applications:
+  - name: calc_view-db-deployer
+    path: .
+    no-route: true
+    health-check-type: process
+    memory: 128M
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - calc_view-db

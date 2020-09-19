@@ -1,0 +1,45 @@
+{
+  "namespace": "COM.S4EXT",
+  "definitions": {
+    "COM.S4EXT.cost_expand": {
+      "kind": "entity",
+      "elements": {
+        "one": {
+          "type": "cds.String"
+        },
+        "two": {
+          "type": "cds.String"
+        }
+      }
+    },
+    "calc": {
+      "@source": "srv/service.cds",
+      "kind": "service"
+    },
+    "calc.cost_expand": {
+      "kind": "entity",
+      "query": {
+        "SELECT": {
+          "from": {
+            "ref": [
+              "COM.S4EXT.cost_expand"
+            ]
+          }
+        }
+      },
+      "elements": {
+        "one": {
+          "type": "cds.String"
+        },
+        "two": {
+          "type": "cds.String"
+        }
+      },
+      "$syntax": "projection"
+    }
+  },
+  "meta": {
+    "creator": "CDS Compiler v1.39.0"
+  },
+  "$version": "1.0"
+}

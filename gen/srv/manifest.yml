@@ -1,0 +1,9 @@
+---
+applications:
+  - name: calc_view-srv
+    path: .
+    memory: 128M
+    buildpacks:
+      - nodejs_buildpack
+    services:
+      - calc_view-db
