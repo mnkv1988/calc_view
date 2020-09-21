@@ -1,0 +1,27 @@
+{
+  "format_version": 1,
+  "imports": [
+    {
+      "target_table": "COM_S4EXT_COST_EXPAND",
+      "source_data": {
+        "data_type": "CSV",
+        "file_name": "COM.S4EXT.cost_expand.csv",
+        "has_header": true,
+        "type_config": {
+          "delimiter": ";"
+        }
+      },
+      "import_settings": {
+        "import_columns": [
+          "ONE",
+          "TWO"
+        ],
+        "include_filter": []
+      },
+      "column_mappings": {
+        "ONE": "ONE",
+        "TWO": "TWO"
+      }
+    }
+  ]
+}

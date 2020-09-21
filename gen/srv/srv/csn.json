@@ -4,10 +4,11 @@
     "COM.S4EXT.cost_expand": {
       "kind": "entity",
       "elements": {
-        "one": {
+        "ONE": {
+          "key": true,
           "type": "cds.String"
         },
-        "two": {
+        "TWO": {
           "type": "cds.String"
         }
       }
@@ -28,10 +29,11 @@
         }
       },
       "elements": {
-        "one": {
+        "ONE": {
+          "key": true,
           "type": "cds.String"
         },
-        "two": {
+        "TWO": {
           "type": "cds.String"
         }
       },

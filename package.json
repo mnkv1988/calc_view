@@ -17,9 +17,13 @@
         "start": "npx cds run"
     },
     "cds": {
+        "hana": {
+            "deploy-format": "hdbtable",
+            "syntax": "hdi"
+        },
         "requires": {
             "db": {
-                "kind": "sql"
+                "kind": "hana"
             }
         }
     }
