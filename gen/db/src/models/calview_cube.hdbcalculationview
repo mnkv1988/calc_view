@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="core.models::calview_cube" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="HOURLY" enforceSqlExecution="false">
+<descriptions defaultDescription="calview_cube"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="COM_S4EXT_COST_EXPAND">
+    <resourceUri>COM_S4EXT_COST_EXPAND</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="COM_S4EXT_COST_EXPAND">
+  <attributes>
+    <attribute id="ONE" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ONE"/>
+      <keyMapping columnObjectName="COM_S4EXT_COST_EXPAND" columnName="ONE"/>
+    </attribute>
+    <attribute id="TWO" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TWO"/>
+      <keyMapping columnObjectName="COM_S4EXT_COST_EXPAND" columnName="TWO"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="MY_MEASURE" order="3" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="MY_MEASURE"/>
+      <measureMapping columnObjectName="COM_S4EXT_COST_EXPAND" columnName="MY_MEASURE"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

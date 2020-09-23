@@ -48,10 +48,16 @@ resources:
 # ------------------------------------------------------------
  - name: calc_view-db
 # ------------------------------------------------------------
-   type: com.sap.xs.hdi-container
-   parameters:
-     service: hana  # or 'hanatrial' on trial landscapes
-     service-plan: hdi-shared
+   type: org.cloudfoundry.existing-service
+   parameters: 
+     service-name: calc_view-db
    properties:
      hdi-service-name: ${service-name}
+     
+   #type: com.sap.xs.hdi-container
+   #parameters:
+   #  service: hana  # or 'hanatrial' on trial landscapes
+   #  service-plan: hdi-shared
+   #properties:
+   #  hdi-service-name: ${service-name}
 
