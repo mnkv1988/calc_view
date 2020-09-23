@@ -10,6 +10,9 @@
         },
         "TWO": {
           "type": "cds.String"
+        },
+        "MY_MEASURE": {
+          "type": "cds.Double"
         }
       }
     },
@@ -35,6 +38,9 @@
         },
         "TWO": {
           "type": "cds.String"
+        },
+        "MY_MEASURE": {
+          "type": "cds.Double"
         }
       },
       "$syntax": "projection"
